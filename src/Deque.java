@@ -191,6 +191,11 @@ public class Deque<Item> implements Iterable<Item> {
 		private Node current = first;
 
 		@Override
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+
+		@Override
 		public boolean hasNext() {
 			return current != null;
 		}
